@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Aulas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AULAS</h1>
+        <nav>MINHAS AULAS</nav>
+    </header>
+
+    <section class="aulas">
+        <h2>Aulas Preparadas</h2>
+        <table id="aulas-preparadas">
+            <tr>
+                <th>ID</th>
+                <th>Matéria</th>
+                <th>Conteúdo</th>
+                <th>Ações</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Linux</td>
+                <td>Introdução</td>
+                <td>
+                    <button onclick="confirmDelete(1)">🗑️</button>
+                    <button onclick="confirmEdit(1)">✏️</button>
+                </td>
+            </tr>
+        </table>
+
+        <h2>Aulas Lecionadas</h2>
+        <table id="aulas-lecionadas">
+            <tr>
+                <th>ID</th>
+                <th>Matéria</th>
+                <th>Conteúdo</th>
+                <th>Ações</th>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Java</td>
+                <td>OOP</td>
+                <td>
+                    <button onclick="confirmDelete(2)">🗑️</button>
+                    <button onclick="confirmEdit(2)">✏️</button>
+                </td>
+            </tr>
+        </table>
+
+        <button onclick="window.location.href='criar.html'">Criar novo +</button>
+    </section>
+    <div id="confirmDeleteModal" class="modal">
+        <p>Tem certeza que deseja excluir essa aula?</p>
+        <button onclick="deleteLesson()">Sim</button>
+        <button onclick="closeModal()">Não</button>
+    </div>
+
+    <div id="confirmEditModal" class="modal">
+        <p>Deseja editar essa aula?</p>
+        <button onclick="editLesson()">Sim</button>
+        <button onclick="closeModal()">Não</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
