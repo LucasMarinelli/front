@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff7f7;
+}
+
+header {
+    background-color: #3f51b5;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.text-aulas {
+    font-size: 36px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.text-minhas-aulas {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.seta-baixo {
+    width: 27.94px;
+    height: 18.02px;
+}
+
+.section-container {
+    margin: 20px auto;
+    width: 90%;
+}
+
+.text-aulas-preparadas,
+.text-aulas-lecionadas {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.table-header {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #f5f5f5;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+td img {
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+}
+
+.button-edit {
+    width: 39px;
+    height: 31px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-trash {
+    width: 34px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-create-new {
+    width: 297px;
+    height: 75px;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+
