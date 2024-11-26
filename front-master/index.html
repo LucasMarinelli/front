@@ -40,6 +40,15 @@
                                     <button class="button-trash">🗑</button>
                                 </td>
                             </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img src="C:\Users\W10\Downloads\front-master\html.png" alt="HTML5"></td>
+                                <td>HTML5</td>
+                                <td>
+                                    <button class="button-edit">✎</button>
+                                    <button class="button-trash">🗑</button>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -59,9 +68,18 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>4</td>
-                                <td><img src="C:\Users\W10\Downloads\front-master\OIP.jpg" alt="C#"></td>
+                                <td>3</td>
+                                <td><img src="C:\Users\W10\Downloads\front-master\C.jpg" alt="C#"></td>
                                 <td> Introdução a C#</td>
+                                <td>
+                                    <button class="button-edit">✎</button>
+                                    <button class="button-trash">🗑</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><img src="C:\Users\W10\Downloads\front-master\Java.png" alt="Java"></td>
+                                <td>POO</td>
                                 <td>
                                     <button class="button-edit">✎</button>
                                     <button class="button-trash">🗑</button>
@@ -72,9 +90,25 @@
                 </div>
             </div>
         </div>
-        <button class="button-create-new">
+        <button class="button-create-new" onclick="window.location.href='criar.html'">
             Criar novo <span class="icon-plus">+</span>
         </button>
     </section>
+    <div id="edit-message" class="hidden">
+        <p>Tem certeza que deseja editar essa aula?</p>
+        <div id="edit-message-buttons">
+            <button class="message-confirm">Sim</button>
+            <button class="message-cancel">Não</button>
+        </div>
+    </div>
+    <div id="delete-message" class="hidden">
+        <p>Tem certeza que deseja excluir essa aula?</p>
+        <div id="delete-message-buttons">
+            <button class="message-confirm">Sim</button>
+            <button class="message-cancel">Não</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
